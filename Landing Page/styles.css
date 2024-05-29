@@ -1,0 +1,526 @@
+/* Reset default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure header stays above other content */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff4b4b; /* Change color to red on hover */
+}
+
+.explore-button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-top: 20px;
+    background-color: #ff4b4b; /* Red background color */
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+    background-color: #e64141; /* Darker red on hover */
+}
+
+/* Hero section styles */
+.hero {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    background-image: url("https://wallpapers.com/images/featured/movie-9pvmdtvz4cb0xl37.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Fix the background image */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Black overlay with 60% opacity */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1; /* Ensure hero content is above the overlay */
+    color: #fff;
+}
+
+.hero-content h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Main content section */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    color: #ffffff;
+    background-color: #000000;
+    margin-top: 5rem;
+}
+
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 20px; 
+}
+
+.movie-list img {
+    width: 20rem;
+    height: 10rem; 
+    max-width: 100%; /* Limit image width to 100% of grid cell */
+    border-radius: 10px;
+    object-fit: cover; /* Scale and crop images to fill grid cell */
+}
+
+.description {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.description h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 15rem;
+}
+
+.description p {
+    font-size: 25px;
+    line-height: 1.5;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.highlight-text {
+    color: #ff1212; 
+    font-weight: bold; 
+}
+
+.highlight5-text {
+    color: #ff92c1; 
+    font-weight: bold; 
+}
+.highlight2-text {
+    color: #f712ff; 
+    font-weight: bold; 
+}
+.highlight1-text {
+    color: #177fff; 
+    font-weight: bold; 
+}
+.highlight3-text {
+    color: #601cff; 
+    font-weight: bold; 
+}
+.highlight4-text {
+    color: #ffa81c; 
+    font-weight: bold; 
+}
+.film-text {
+    text-align: center;
+    margin: 40px 0;
+    margin-top: 10rem;
+}
+
+.film-text h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Next content section */
+.next-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+.next-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.rated-movies {
+    margin-top: 20px;
+}
+
+.rated-movies-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+.rated-movies-grid img {
+    width: 40%;
+    height:30%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.section-heading {
+    text-align: center;
+    margin-top: 8rem;
+    font-size: 24px;
+    color: #ffffff;
+}
+.pricing-plans {
+    gap: 32px;
+    display: flex;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  .pricing-card {
+    position: relative;
+    min-width: 360px;
+    padding: 32px;
+    padding-bottom: 96px;
+    border-radius: 4px;
+    border: 1px solid #262626;
+    background-color: #26262620;
+    box-shadow: 0 0 32px transparent;
+    text-align: center;
+  }
+  .pricing-card.basic {
+    --col: #0891b2;
+  }
+  .pricing-card.standard {
+    --col: #059669;
+  }
+  .pricing-card.premium {
+    --col: #c026d3;
+  }
+  .pricing-card:hover {
+    border-color: var(--col);
+    background-color: #26262680;
+    box-shadow: 0 0 32px #171717;
+    transform: translateY(-16px) scale(1.02);
+    transition: all 0.5s ease;
+  }
+  .pricing-card .heading h4 {
+    padding-bottom: 12px;
+    color: var(--col);
+    font-size: 24px;
+    font-weight: normal;
+  }
+  
+  .pricing-card .heading p {
+    color: #a3a3a3;
+    font-size: 14px;
+    font-weight: lighter;
+  }
+  
+  .pricing-card .price {
+    position: relative;
+    color: var(--col);
+    font-size: 60px;
+    font-weight: bold;
+  }
+  
+  .pricing-card .price sub {
+    position: absolute;
+    bottom: 14px;
+    color: #a3a3a3;
+    font-size: 14px;
+    font-weight: lighter;
+  }
+  
+  .pricing-card .features li {
+    padding-bottom: 16px;
+    color: #a3a3a3;
+    font-size: 16px;
+    font-weight: lighter;
+    text-align: left;
+  }
+  
+  .pricing-card .features li i,
+  .pricing-card .features li strong {
+    color: #e4e4e7;
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  .pricing-card .features li strong {
+    padding-left: 24px;
+  }
+  
+  .pricing-card .cta-btn {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid var(--col);
+    background-color: var(--col);
+    color: #e4e4e7;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .pricing-card .cta-btn:active {
+    background-color: transparent;
+    color: var(--col);
+    transition: all 0.3s ease;
+  }
+  
+.footer {
+	background-color: #000000;
+	padding: 80px 0;
+}
+
+.container {
+	max-width: 1170px;
+	margin: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer-col {
+	width: 25%;
+	padding: 0 15px;
+}
+
+.footer-col h4 {
+	font-size: 18px;
+	color: #FFF;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #9b1ee9;
+	width: 70px;
+	height: 2px;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	color: #DDD;
+	display: block;
+	font-size: 1rem;
+	font-weight: 300;
+	text-transform: capitalize;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+	color: #FFF;
+	padding-left: 7px;
+}
+@media(max-width: 767px) {
+	.footer-col {
+		width: 50%;
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 574px) {
+	.footer-col {
+		width: 100%;
+	}
+}
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 2rem;  
+}
+.footer-bottom p {
+    font-size: 14px;
+    color: #FFF;
+}
+
+.contact-form-container {
+    text-align: center;
+    padding: 80px 0;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-container i {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    color: #1aff00;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 30px);
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #303030;
+    font-size: 16px;
+    background-color: #323232;
+    margin-left: 3rem;
+    color: #ffffff;
+}
+
+textarea {
+    height: 120px;
+   
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #ff0707;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 3rem;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #ffcd39;
+}/* Styles for FAQ Accordion */
+.acc-kontainer {
+    width: 100%;
+    max-width: 80rem; /* Set max width for the FAQ container */
+    margin: auto; /* Center the container horizontally */
+    margin-top: 5rem;
+}
+
+.acc-kontainer .acc-body {
+    width: 100%;
+    height: 0;
+    overflow: hidden; /* Hide overflow to collapse content */
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    line-height: 28px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    transition: height 0.5s; /* Smooth transition for expanding/collapsing */
+}
+
+.acc-kontainer label {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: block;
+    padding: 15px;
+    width: 100%;
+    color: #fff;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+.acc-kontainer input {
+    display: none;
+}
+
+.acc-kontainer label:before {
+    font-family: 'FontAwesome';
+    content: '\f067';
+    font-weight: bolder;
+    float: right;
+}
+
+.acc-kontainer input:checked + label {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.acc-kontainer input:checked ~ .acc-body {
+    height: auto; /* Expand height when input is checked */
+    padding: 20px;
+}
